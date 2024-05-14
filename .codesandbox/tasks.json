@@ -1,0 +1,49 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Bun",
+      "command": "curl -fsSL https://bun.sh/install | bash && exec /bin/zsh"
+    },
+    {
+      "name": "Install Dependencies",
+      "command": "bun run build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "preinstall": {
+      "name": "preinstall",
+      "command": "bun run preinstall"
+    },
+    "watch": {
+      "name": "watch",
+      "command": "bun run watch"
+    },
+    "build": {
+      "name": "build",
+      "command": "bun run build"
+    },
+    "start": {
+      "name": "start",
+      "command": "bun run start"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "bun run dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 8080
+      }
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "bun run deploy"
+    },
+    "format": {
+      "name": "format",
+      "command": "bun run format"
+    }
+  }
+}

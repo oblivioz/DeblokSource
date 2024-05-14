@@ -1,3 +1,2 @@
-[submodule "static/vnc"]
-	path = static/vnc
-	url = https://github.com/Deblok-Workshop/noVNC.git
+DBPWD=Oblivioz##11
+ENDPOINTS=/api,/graphql,/webhooks
